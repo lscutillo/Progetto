@@ -1,3 +1,7 @@
-<p>
-  menu works!
-</p>
+<div class="header">
+    <ul class="menu">
+        <li *ngFor="let item of menu; let i = index">
+            <a [routerLink]="[item.endpoint]" routerLinkActive="router-link-active" class="item{{i+1}}">{{item.description}}</a>
+        </li>
+    </ul>
+</div>

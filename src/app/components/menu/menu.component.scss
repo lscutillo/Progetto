@@ -1,0 +1,67 @@
+.header {
+    background-color: darkcyan;
+}
+
+.menu {
+    display: grid;
+    color: white;
+    grid-template-columns: 200px 200px 200px 200px 200px 200px;
+    list-style: none;
+}
+
+.item1 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.item2 {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.item3 {
+    grid-column: 4;
+    grid-row: 1;
+}
+
+.item4 {
+    grid-column: 5;
+    grid-row: 1;
+}
+
+.item5 {
+    grid-column: 6;
+    grid-row: 1;
+}
+
+.router-link-active {
+    font-weight: bold;
+}
+
+
+/* unvisited link */
+
+a:link {
+    color: white;
+}
+
+
+/* visited link */
+
+a:visited {
+    color: white;
+}
+
+
+/* mouse over link */
+
+a:hover {
+    color: white;
+}
+
+
+/* selected link */
+
+a:active {
+    color: white;
+}
