@@ -1,44 +1,22 @@
-<div class="card-deck">
-    <div class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Adidas_Logo.svg" class="card-img-top" class="center" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">ADIDAS</h5>
-        <p class="card-text">adidas è ovunque e con le sue numerosissime linee arriva a coprire tutti i settori sportivi e casual. Scopri su AW LAB l'assortimento di scarpe adidas per uomo, donna e bambino e di abbigliamento sportivo di uno dei più famosi brand dello streetwear. Che aspetti? Acquista subito su AW LAB!<br>
-            <span class="collapse" id="viewdetails1">Se ami la cultura Hip Hop e la moda street style non puoi perderti i modelli di adidas Superstar, mentre con un paio di adidas Stan Smith assicuri al tuo guardaroba un vero classico del mondo delle sneakers. Per outfit dalle texture più originali scopri tutti i modelli AW LAB di adidas Gazelle e lasciati tentare dalla natura metropolitana delle adidas Deerupt, sneakers dal design minimal e dalla massima leggerezza. Se invece il tuo obiettivo è stupire e farti notare scopri subito le nuove sneakers adidas Samba. 
-                Per gli amanti dello sport puoi scopi la linea più tecnica di adidas, le famose adidas con la suola boost. 
-                <br>
-                adidas non è solo scarpe: su AW LAB trovi anche tante linee di abbigliamento streetwear, perfette per le attività in palestra, all'aria aperta e il tempo libero. adidas Originals, ha un'anima casual e lifestyle, mentre per le vere fashion victims sono imperdibili le collezioni aidcolor. L'abbigliamento adidas uomo e donna soddisfa davvero tutti i gusti: su AW LAB puoi trovare t-shirt, canotte, top sportivi, giacche, felpe, pantaloni, shorts, leggins e gonne.
-                <br>
-                Fondato nel 1948 da Adolf Dassler, adidas è un brand iconico a livello mondiale, divenuto un vero e proprio culto dell'abbigliamento streetwear negli anni '70 e '80. Le tre righe e il trifoglio che lo contraddistinguono, sono diventati una vera e propria icona di stile tra le stelle dello sport, della musica e dello spettacolo. La peculiarità del suo stile è il giusto mix tra stile retrò e sportivo, abbinando semplici forme e colori, ad un look intramontabile.
+<div class="container">
+    <div class="row grid-container">
 
-            </span> <a data-toggle="collapse" data-target="#viewdetails1"><font id="mostraDiPiù">   Mostra di più.. &raquo;</font></a>
-        </p>
-      </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card bg-light">
+                <img class="card-img-top" [src]=[item.img] alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">{{item.name | uppercase}}</h5><small class="text-muted">Anno di uscita: {{item.year}}</small>
+                    <p class="card-text" style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;"><small>{{item.description}}</small></p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">{{item.genre}} - Rating: {{item.rating}}</li>
+                    <li class="list-group-item"><b>€ {{item.price}}</b></li>
+                </ul>
+                <div class="card-body">
+                    <button type="button" routerLink="/gamelist/{{item.id}}" class="btn btn-outline-primary btn-sm btn-block">Details</button>
+                    <button type=" button" routerLink="/edit/{{item.id}}" class="btn btn-outline-secondary btn-sm btn-block ">Edit</button>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="card">
-      <img src="http://content.nike.com/content/dam/one-nike/globalAssets/social_media_images/nike_swoosh_logo_black.png" class="card-img-top"  class="center" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">NIKE</h5>
-        <p class="card-text">Scopri tutta la vasta gamma di prodotti Nike sul sito di BOOM: se sei un amante del running, potrai scegliere tra le diverse Vapormax o le innovative Nike React 55.
-
-            Per i nostalgici degli anni ’90 ecco tornare i modelli chunky, di cui la regina è la M2K Tekno, rivisitazione futuristica della famosa Air Monarch, nata nel 2002 affiancata dall’altrettanto famosa Nike Air Max 97.
-            <span class="collapse" id="viewdetails2"> Scarpa simbolo di questa generazione è sicuramente la Nike Air Force 1, nata nel 1982 come scarpa da basket ed oggi presente in una vasta gamma di materiali e colorazioni. Per gli amanti del comfort e del colore, il modello su cui puntare è sicuramente la Nike Air Max 270, dotata di unità Max Air e morbida tomaia in tessuto. Modello innovativo per il 2019 è la Nike 720, caratterizzata da un design a onde ed Unità Air Max più grande di sempre.
-    
-                L’abbigliamento Nike offre soluzioni perfette sia per lo sport che per il tempo libero: Nike Tech e Nike Sportswear sono le 2 linee di punta, la 1° caratterizzata da materiali innovativi e traspiranti, la 2° più fashion dai colori vivaci e tagli moderni.   </span> <a data-toggle="collapse" data-target="#viewdetails2"><font id="mostraDiPiù">   Mostra di più.. &raquo;</font></a>
-        </p>
-      </div>
-    </div>
-    <div class="card">
-      <img src="https://images-na.ssl-images-amazon.com/images/I/21%2Bz3njox7L._SL500_AC_SS350_.jpg" class="card-img-top" class="center" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">VANS</h5>
-        <p class="card-text">Alternativo ed underground: ecco gli elementi chiave del brand nato dalle menti dei fratelli Van Doren nel 1966. James e Paul Van Doren, Gordon Lee e Serge Delia realizzarono la prima scarpa concepita esclusivamente per lo skateboard, pratica e dinamica. L’azienda si chiamava Van Doren Rubber Company e produceva scarpe in tela destinate a diventare nel corso degli anni un'icona del lifestyle californiano, ma soprattutto l'emblema sia delle scarpe skate uomo che delle scarpe skate donna, a livello globale. <br>
-                <span class="collapse" id="viewdetails3">Reinventando i mitici modelli della propria collezione, con versioni sempre diverse, Vans è da sempre la scarpa da skate per eccellenza grazie anche ad alcune caratteristiche fondamentali come la massima aderenza al piede e la garanzia di protezione e resistenza, data dai rinforzi presenti nella zona del tallone.
-                    <br>
-                        Negli anni i modelli Vans si sono moltiplicati ma di certo il prodotto iconico per eccellenza è la favolosa slip-on , scarpa senza lacci prodotto in un numero infinito di varianti. La semplicità in queste scarpe è un punto di forza in quanto le rende compatibili con praticamente qualunque tipo do outfit.  Con il passare degli anni la produzione del marchio è stata estesa offrendo così anche abbigliamento sportivo e casual. 
-                        <br>
-                        Le scarpe Vans possono essere indossate su diversi capi d’abbiliamento, come divertenti T-shirt da uomo oppure sotto colorati leggins da donna, in base al tuo look! Più che una marca, Vans è oggi un modo di essere.</span> <a data-toggle="collapse" data-target="#viewdetails3"><font id="mostraDiPiù">   Mostra di più.. &raquo;</font></a>
-        </p>
-      </div>
-    </div>
-  </div>
+</div>
