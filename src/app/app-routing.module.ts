@@ -15,11 +15,10 @@ export const appRoutes: Routes = [
       { path: RoutingEnum.cards, component: CardsComponent },
       { path: RoutingEnum.feedback, component: FeedbackComponent },
       { path: RoutingEnum.profilo, component: ProfiloComponent },
-      
-      { path: '', redirectTo: RoutingEnum.base + '/' + RoutingEnum.home, pathMatch: 'full' },
     ],
     //canActivateChild: [LoginControlsService]
   },
+  { path: '', redirectTo: RoutingEnum.separator + RoutingEnum.base + RoutingEnum.separator + RoutingEnum.home, pathMatch: 'full' }
   //{path: RoutingEnum.login, component: LoginComponent},
   //{ path: '', redirectTo: '/' + RoutingEnum.login, pathMatch: 'full' },
 ];
