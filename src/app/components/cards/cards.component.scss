@@ -1,0 +1,23 @@
+#mostraDiPiù{
+    color:blue;
+}
+img {
+    width: 200px;
+    height: 200px;
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .column {
+    float: left;
+    
+    padding: 0 10px;
+  }
+  @media screen and (max-width: 600px) {
+    .column {
+      display: block;
+    }
+  }
