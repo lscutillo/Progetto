@@ -1,4 +1,4 @@
-export enum RoutingEnum{
+export enum RoutingEnum {
     base = 'ShoesSelling',
     home = 'home',
     product = 'product-list',
@@ -6,4 +6,5 @@ export enum RoutingEnum{
     feedback = 'feedback',
     profilo = 'profilo',
     login = 'login',
+    separator = '/'
 }
