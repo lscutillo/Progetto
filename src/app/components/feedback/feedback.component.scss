@@ -87,3 +87,13 @@ select option {
 ::-webkit-input-placeholder {
     color: white
 }
+
+.textarea {
+    background-color: rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    width: 300px;
+    height: 80px;
+}
