@@ -1,7 +1,29 @@
-<div class="header">
-    <ul class="menu">
-        <li *ngFor="let item of menu; let i = index">
-            <a [routerLink]="[item.endpoint]" routerLinkActive="router-link-active" class="item{{i+1}}">{{item.description}}</a>
-        </li>
-    </ul>
-</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light mb-5">
+
+    <a class="navbar-brand">ShoesSelling</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item" *ngFor="let item of menu; let i = index">
+                <a [routerLink]="[item.endpoint]" routerLinkActive="router-link-active" class="nav-link">{{item.description}}</a>
+            </li>
+        </ul>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li *ngIf="true">
+                    <form class="form-inline my-2 my-lg-0  mr-4">
+                        <input class="form-control mr-sm-2 bg-muted" type="search" placeholder="Search" aria-label="Search">
+                        <a class="my-2 my-sm-0" (click)="search()" title="Cerca" style="cursor: pointer; ">
+                            <span class="fa fa-search " style="font-size: 24px "></span></a>
+                    </form>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-danger my-2 my-sm-0" type="button" (click)="doLogout()">logout</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
