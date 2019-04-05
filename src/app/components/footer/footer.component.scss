@@ -1,22 +1,27 @@
+@import '../../../assets/mixin/mixin.scss';
+
 h6{
     color:gray;
-    font-size: 58%;
-    
+    font-size: 80%;
+    margin-bottom:1px;
+    margin-left:2px;
+    @include grid-row(2);
 }
 
 .social{
-    position: absolute;
-    bottom:10px;
-    left: 20px;
+    @include  grid-column(1);
+    @include grid-row(2);
+  
    
 }
 
 a{
    color:white;
+   font-size:20px;
 }
 
-.copy{
-    position:absolute;
-    bottom: 0;
-    left: 100px;
+
+
+.Wrapper{
+    @include display-grid((1fr,1fr), (100px 1fr));
 }
