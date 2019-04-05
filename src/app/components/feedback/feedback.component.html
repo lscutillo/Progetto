@@ -1,45 +1,54 @@
-<form>
-    <div class="feedback">
-        <div class="title">
-            <div class="">
-                <h3><i class=" "></i> Contattaci</h3>
-                <p class=" ">le vostre segnalazioni ci aiuteranno a migliorare</p>
-            </div>
-        </div>
+<div class="box">
 
-        <div class="">
-
-            <div class="">
-                <input type="text " class="input" name="nome" placeholder="Nome" required>
+    <form class="form">
+        <div class="feedback">
+            <div class="title">
+                <div class="">
+                    <h3><i class=" "></i> Contattaci</h3>
+                    <p class=" ">le vostre segnalazioni ci aiuteranno a migliorare</p>
+                </div>
             </div>
 
             <div class="">
-                <input type="text" class="input" name="Cognome" placeholder="Cognome " required>
+
+                <div class="input-container">
+                    <i class="fas fa-user item1"></i>
+                    <input type="text " class="item2" name="nome" placeholder=" Nome" required>
+                </div>
+                <br>
+                <div class="input-container">
+                    <i class="fas fa-user item1"></i>
+                    <input type="text" class="item2" name="Cognome" placeholder=" Cognome " required>
+                </div>
+                <br>
+                <div class="input-container">
+
+                    <i class="fas fa-venus-mars item1"></i>
+                    <select name="Genere" class="item2">
+                        <option value="" disabled selected>Sesso</option>
+                        <option value="Uomo">Uomo</option>
+                        <option value="Donna">Donna</option>
+                    </select>
+                </div>
+                <br>
+                <div class="input-container">
+                    <i class=" fas fa-phone item1 "></i>
+                    <input type="text " class="item2 " name="telefono " placeholder=" Telefono " required>
+                </div>
+            </div>
+            <br>
+            <div class="end-container ">
+                <textarea class="textarea " placeholder=" Inviaci la tua segnalazione... " required></textarea>
+            </div>
+            <br>
+            <br>
+            <div class="end-container">
+                <a href="mailto:renatodipi@gmail.com " target="_top "><button value="Invia " class="invia">INVIA</button></a>
             </div>
 
-            <div class="genere">
-                <select name="Genere" class="input">
-                    <option value="" disabled selected>Sesso</option>
-                    <option value="Uomo">Uomo</option>
-                    <option value="Donna">Donna</option>
-            </select>
-            </div>
 
-            <div class="">
-                <input type="text" class="input" name="telefono" placeholder="Telefono" required>
-            </div>
+
         </div>
 
-        <div class="">
-            <textarea class="input" placeholder="Inviaci la tua segnalazione " required></textarea>
-        </div>
-
-        <div class="">
-            <a href="mailto:renatodipi@gmail.com" target="_top"><input type="submit" value="Invia " class="invia"></a>
-        </div>
-
-
-
-    </div>
-
-</form>
+    </form>
+</div>

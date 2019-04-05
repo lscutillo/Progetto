@@ -1,30 +1,77 @@
+@import '../../../assets/mixin/mixin.scss';
+.box {
+    @include display-grid((auto auto auto));
+}
+
+.form {
+    @include grid-column(2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .feedback {
     color: white;
     background: transparent;
     text-align: center;
 }
 
-.input {
-    width: 300px;
+.input-container {
+    @include display-grid(50px 250px);
     background-color: rgba(255, 255, 255, 0.2);
-    padding: 12px 20px;
-    margin: 8px 0;
+    width: 300px;
+    height: 50px;
     box-sizing: border-box;
     border: none;
     border-bottom: 2px solid white;
     color: white;
 }
 
-.invia {
-    width: 300px;
-    border-radius: 10px;
-    background-color: white;
+.item1 {
+    @include grid-column(1);
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+    padding: 17px;
+    min-width: 50px;
+    text-align: center;
+    border: none;
 }
 
-::-webkit-input-placeholder {
-    color: white
+.item2 {
+    @include grid-column(2);
+    width: 250px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.end-container {
+    width: 300px;
+    height: 50px;
+}
+
+.textarea {
+    background-color: rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    width: 300px;
+    height: 80px;
+}
+
+.invia {
+    width: 300px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: white;
 }
 
 select option {
     color: black;
+}
+
+::-webkit-input-placeholder {
+    color: white;
 }

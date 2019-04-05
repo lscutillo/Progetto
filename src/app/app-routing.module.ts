@@ -6,6 +6,7 @@ import { CardsComponent } from './components/cards/cards.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { FeedbackComponent } from './components/feedback/feedback.component';
 import { ProfiloComponent } from './components/profilo/profilo.component';
+import { FeedbackProvaGridComponent } from './components/feedback-prova-grid/feedback-prova-grid.component';
 
 export const appRoutes: Routes = [
   {
@@ -14,7 +15,7 @@ export const appRoutes: Routes = [
       { path: RoutingEnum.product, component: ProductListComponent },
       { path: RoutingEnum.cards, component: CardsComponent },
       { path: RoutingEnum.feedback, component: FeedbackComponent },
-      { path: RoutingEnum.profilo, component: ProfiloComponent },
+      { path: RoutingEnum.profilo, component: FeedbackProvaGridComponent },
     ],
     //canActivateChild: [LoginControlsService]
   },
