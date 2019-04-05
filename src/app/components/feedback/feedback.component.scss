@@ -1,4 +1,14 @@
-.form {}
+@import '../../../assets/mixin/mixin.scss';
+.box {
+    @include display-grid((auto auto auto));
+}
+
+.form {
+    @include grid-column(2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .feedback {
     color: white;
@@ -6,46 +16,19 @@
     text-align: center;
 }
 
-
-/*
-.input {
-    grid-column: 1;
-    grid-row: 1;
-    width: 250px;
-    height: 50px;
-    background-color: transparent;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: none;
-    color: white;
-}
-
 .input-container {
-    display: grid;
-    grid-template-columns: 50px 250px;
+    @include display-grid(50px 250px);
     background-color: rgba(255, 255, 255, 0.2);
     width: 300px;
     height: 50px;
-    margin: 8px 0;
     box-sizing: border-box;
     border: none;
     border-bottom: 2px solid white;
     color: white;
 }
 
-.icon {
-    grid-column: 2;
-    grid-row: 1;
-    align-content: center;
-    color: white;
-    min-width: 100px;
-    text-align: center;
-} 
-*/
-
 .item1 {
-    grid-area: image;
+    @include grid-column(1);
     background-color: rgba(255, 255, 255, 0.5);
     color: white;
     padding: 17px;
@@ -55,7 +38,7 @@
 }
 
 .item2 {
-    grid-area: input;
+    @include grid-column(2);
     width: 250px;
     height: 50px;
     background-color: transparent;
@@ -63,20 +46,19 @@
     color: white;
 }
 
-.input-container {
-    display: grid;
-    grid-template-areas: 'image input input input input input';
-    //grid-gap: 50px;
+.textarea {
+    @include grid-column(1);
     background-color: rgba(255, 255, 255, 0.2);
-    width: 300px;
-    height: 50px;
     box-sizing: border-box;
     border: none;
     border-bottom: 2px solid white;
     color: white;
+    width: 300px;
+    height: 80px;
 }
 
 .invia {
+    @include grid-column(1);
     width: 300px;
     height: 40px;
     border-radius: 30px;
@@ -88,15 +70,5 @@ select option {
 }
 
 ::-webkit-input-placeholder {
-    color: white
-}
-
-.textarea {
-    background-color: rgba(255, 255, 255, 0.2);
-    box-sizing: border-box;
-    border: none;
-    border-bottom: 2px solid white;
     color: white;
-    width: 300px;
-    height: 80px;
 }
