@@ -19,11 +19,11 @@ export class ProductListComponent implements OnInit {
   ngOnInit() {
     this.shoeslist = this.shoesService.getShoeslist();
     for (let i = 0; i < this.shoeslist.length; i++) {
-      this.like[i]="fa fa-heart-o mr-3";
+      this.like[i]="far fa-heart mr-3";
     }
   }
 
   changeLike(index: number){
-    (this.like[index]=="fa fa-heart-o mr-3")?(this.like[index]="fa fa-heart mr-3"): (this.like[index]="fa fa-heart-o mr-3");
+    (this.like[index]=="fas fa-heart mr-3")?(this.like[index]="far fa-heart mr-3"): (this.like[index]="fas fa-heart mr-3");
   }
 }
