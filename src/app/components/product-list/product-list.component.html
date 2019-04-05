@@ -1,14 +1,26 @@
-<div class="card bg-light mb-3">
-    <div class="d-flex justify-content-start">
-        <img src="//placehold.it/100">
-        <div class="px-2">
-            <h5 class="card-title mt-3">Title</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit elit elit adipiscing</p>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+<ng-container *ngFor="let item of shoeslist; let i = index">
+    <div class="card bg-light mb-3 w-100">
+        <div class="row ">
+            <div class="col-md-2 ">
+                <img src="//placehold.it/50 " class="card-img" alt="...">
+            </div>
+            <div class="col-md-6 px-2 ">
+                <div class="card-body">
+                    <h5 class="card-title">{{item.name}}</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur</p>
+                    <p class="card-text"><small class="text-muted">{{item.brand}}</small></p>
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="d-flex justify-content-end mt-4 mr-3 ">
+                    <a (click)="changeLike(i) " title="Aggiungi ai tuoi preferiti " style="cursor: pointer; ">
+                        <span class="{{like[i]}}" style="font-size: 29px "></span></a>
+                    <a title="condividi! " style="cursor: pointer;"><span class="fa fa-share-alt mr-3 " style="font-size: 29px "></span></a>
+                    <a style="cursor: pointer; "><span class="fa fa-ellipsis-v " style="font-size: 29px "></span></a>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="d-flex justify-content-end">
-        <div class="p-2 "><img src="https://img.icons8.com/material/35/000000/filled-like.png"></div>
-        <div class="p-2 "><img src="https://img.icons8.com/material/35/000000/share.png"></div>
-        <div class="p-2 "><img src="https://img.icons8.com/material/35/000000/share.png"></div>
-    </div>
-</div>
+</ng-container>
