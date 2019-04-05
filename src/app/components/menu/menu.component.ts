@@ -10,9 +10,18 @@ import { MenuService } from 'src/app/services/menu.service';
 export class MenuComponent implements OnInit {
   constructor(private menuService: MenuService) { }
   menu: MenuItem[];
+  display = false;
 
   ngOnInit() {
     this.menu = this.menuService.getList();
+  }
+
+  checkLink(description){
+    if (description=="I Nostri Prodotti" || description=="Le Nostre Marche"){
+      this.display=true;
+    }
+    else
+      this.display=false;
   }
 
 }

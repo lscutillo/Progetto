@@ -12,21 +12,18 @@ import { analyzeAndValidateNgModules } from '@angular/compiler';
 export class ProductListComponent implements OnInit {
 
   shoeslist: ShoesItem[];
-  like: string[];
-  i: any;
+  like: string[] = [];
   
   constructor(private shoesService: ShoesService) { }
 
   ngOnInit() {
     this.shoeslist = this.shoesService.getShoeslist();
     for (let i = 0; i < this.shoeslist.length; i++) {
-      this.like[i] = 'fa fa-heart mr-3';
-      //console.log("eire");
-    }   
+      this.like[i]="fa fa-heart-o mr-3";
+    }
   }
 
-  changeLike(i:any){
-    (this.like[i]=="fa fa-heart mr-3")?(this.like[i]="fa fa-heart-o mr-3"): (this.like[i]="fa fa-heart mr-3");
+  changeLike(index: number){
+    (this.like[index]=="fa fa-heart-o mr-3")?(this.like[index]="fa fa-heart mr-3"): (this.like[index]="fa fa-heart-o mr-3");
   }
-
 }
