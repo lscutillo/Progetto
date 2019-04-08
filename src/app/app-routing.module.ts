@@ -6,10 +6,6 @@ import { CardsComponent } from './components/cards/cards.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { FeedbackComponent } from './components/feedback/feedback.component';
 import { ProfiloComponent } from './components/profilo/profilo.component';
-<<<<<<< HEAD
-=======
-
->>>>>>> 8a13ddfcd0a6da2a3393c033b5cc721b69784cb9
 
 export const appRoutes: Routes = [
   {
