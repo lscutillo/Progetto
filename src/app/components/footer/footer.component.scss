@@ -20,12 +20,10 @@ a{
 .copy{
     @include grid-column(2);
     @include grid-row(2);
-    margin-top:10px;
-   
+    
 }
 
 .wrapper-social{
     @include display-grid((200px 1fr), (79px 1fr));
-    margin-top:5px;
     margin-left:20px;
 }
