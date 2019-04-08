@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuItem } from 'src/app/objects/menuItem';
 import { MenuService } from 'src/app/services/menu.service';
+import { LoginService } from 'src/app/services/login.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-menu',
@@ -8,7 +10,8 @@ import { MenuService } from 'src/app/services/menu.service';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
-  constructor(private menuService: MenuService) { }
+  constructor(private menuService: MenuService, private loginService: LoginService, private router: Router) { }
+
   menu: MenuItem[];
   display = false;
 
@@ -24,4 +27,16 @@ export class MenuComponent implements OnInit {
       this.display=false;
   }
 
+  isSessionEmpty(){
+    //this.username=this.loginService.getUsername();
+    if (sessionStorage.length == 0)
+      return true;
+    else
+      return false;
+  }
+  doLogout()
+  {
+    this.loginService.logout();
+    this.router.navigateByUrl('/login');
+  }
 }

@@ -13,6 +13,11 @@ import { ProfiloComponent } from './components/profilo/profilo.component';
 import { FormsModule } from '@angular/forms';
 import {FooterComponent} from './components/footer/footer.component';
 import { FeedbackProvaGridComponent } from './components/feedback-prova-grid/feedback-prova-grid.component';
+import { LoginComponent } from './components/login/login.component';
+import { AuthGuard } from './services/auth-gard.service';
+import { LoginService } from './services/login.service';
+import { MenuService } from './services/menu.service';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -24,14 +29,16 @@ import { FeedbackProvaGridComponent } from './components/feedback-prova-grid/fee
     FeedbackComponent,
     ProfiloComponent,
     FooterComponent,
-    FeedbackProvaGridComponent
+    FeedbackProvaGridComponent,
+    LoginComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [AuthGuard, LoginService, MenuService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

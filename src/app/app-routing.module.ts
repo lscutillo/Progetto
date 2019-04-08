@@ -7,6 +7,9 @@ import { ProductListComponent } from './components/product-list/product-list.com
 import { FeedbackComponent } from './components/feedback/feedback.component';
 import { ProfiloComponent } from './components/profilo/profilo.component';
 import { FeedbackProvaGridComponent } from './components/feedback-prova-grid/feedback-prova-grid.component';
+import { LoginComponent } from './components/login/login.component';
+import { AuthGuard } from './services/auth-gard.service';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 export const appRoutes: Routes = [
   {
@@ -15,13 +18,14 @@ export const appRoutes: Routes = [
       { path: RoutingEnum.product, component: ProductListComponent },
       { path: RoutingEnum.cards, component: CardsComponent },
       { path: RoutingEnum.feedback, component: FeedbackComponent },
-      { path: RoutingEnum.profilo, component: FeedbackProvaGridComponent },
+      { path: RoutingEnum.profilo, component: ProfiloComponent },
     ],
-    //canActivateChild: [LoginControlsService]
+    canActivateChild: [AuthGuard]
   },
-  { path: '', redirectTo: RoutingEnum.separator + RoutingEnum.base + RoutingEnum.separator + RoutingEnum.home, pathMatch: 'full' }
-  //{path: RoutingEnum.login, component: LoginComponent},
-  //{ path: '', redirectTo: '/' + RoutingEnum.login, pathMatch: 'full' },
+  //{ path: '', redirectTo: RoutingEnum.separator + RoutingEnum.base + RoutingEnum.separator + RoutingEnum.home, pathMatch: 'full' },
+  { path: RoutingEnum.login, component: LoginComponent },
+  { path: '', redirectTo: '/' + RoutingEnum.login, pathMatch: 'full' },
+  { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({
