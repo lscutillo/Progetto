@@ -2,7 +2,7 @@
 
 .wrapper-slide{
     width: 85%;
-    height: 70%;
+    height: 65%;
     @include grid-column(3);
     @include grid-row(2);
     margin-top:200px;
@@ -34,3 +34,10 @@ p{
     text-align: center;
     margin-right:100px;
 }
+
+
+img{
+    width: 900px;
+    height: 500px;
+}
+

@@ -9,7 +9,7 @@ h6{
 
 a{
    color:white;
-   font-size: 20px;
+   font-size: 25px;
 }
 
 .social{
@@ -26,6 +26,6 @@ a{
 
 .wrapper-social{
     @include display-grid((200px 1fr), (79px 1fr));
-    margin-top:50px;
+    margin-top:5px;
     margin-left:20px;
 }
