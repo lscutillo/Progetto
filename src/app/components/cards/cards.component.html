@@ -1,11 +1,15 @@
 <div class="container">
     <div class="row grid-container">
-
-        <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="col-sm-6 col-md-4 col-lg-3 mb-4" >
+            
             <div class="card bg-light">
+                
             <font align="center">   <img class="card-img-top" src="http://pngimg.com/uploads/adidas/adidas_PNG8.png" alt="Card image cap"></font> 
-                <div class="card-body">
-                    <h5 class="card-title">ADIDAS</h5><small class="text-muted"></small>
+                <div class="card-body" > 
+                        
+                    <h5 class="card-title" class="title">ADIDAS</h5><small class="text-muted"></small>
+                    
+                        
                     <p class="card-text" style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;"><small>{{item.description}}</small></p>
                 </div>
                 <ul class="list-group list-group-flush">
@@ -15,54 +19,64 @@
                 <div class="card-body">
                     <button type="button" routerLink="/gamelist/{{item.id}}" class="btn btn-outline-primary btn-sm btn-block">Details</button>
                 </div>
+                <p class="card-text" style="text-align: right"><span class="fa fa-ellipsis-h mr-3" style="font-size: 29px"></span></p>
             </div>
+            
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
             <div class="card bg-light">
-            <font align="center">   <img class="card-img-top" src="http://pngimg.com/uploads/adidas/adidas_PNG8.png" alt="Card image cap"></font> 
+            <font align="center">   <img class="card-img-top" src="http://assets.stickpng.com/thumbs/5842f005a6515b1e0ad75b0f.png" alt="Card image cap"></font> 
                 <div class="card-body">
-                    <h5 class="card-title">ADIDAS</h5><small class="text-muted">Anno di uscita: {{item.year}}</small>
+
+                    <h5 class="card-title">VANS</h5><small class="text-muted"></small>
+                    <div class="middle">
+                            <div ><span class="fa fa-share-alt mr-3" style="font-size: 29px" ></span></div>
+                    </div>
+                          <div class="middleright">
+                                <div ><span class="fa fa-heart mr-3" style="font-size: 29px"></span></div>
+                              </div>
+
                     <p class="card-text" style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;"><small>{{item.description}}</small></p>
                 </div>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">{{item.genre}} - Rating: {{item.rating}}</li>
-                    <li class="list-group-item"><b>€ {{item.price}}</b></li>
                 </ul>
                 <div class="card-body">
                     <button type="button" routerLink="/gamelist/{{item.id}}" class="btn btn-outline-primary btn-sm btn-block">Details</button>
                 </div>
+                <p class="card-text" style="text-align: right"><span class="fa fa-ellipsis-h mr-3" style="font-size: 29px"></span></p>
             </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
             <div class="card bg-light">
-            <font align="center">   <img class="card-img-top" src="http://pngimg.com/uploads/adidas/adidas_PNG8.png" alt="Card image cap"></font> 
+            <font align="center">   <img class="card-img-top" src="http://pngimg.com/uploads/nike/nike_PNG6.png" alt="Card image cap"></font> 
                 <div class="card-body">
-                    <h5 class="card-title">ADIDAS</h5><small class="text-muted">Anno di uscita: {{item.year}}</small>
+                    <h5 class="card-title">NIKE</h5><small class="text-muted"></small>
                     <p class="card-text" style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;"><small>{{item.description}}</small></p>
                 </div>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">{{item.genre}} - Rating: {{item.rating}}</li>
-                    <li class="list-group-item"><b>€ {{item.price}}</b></li>
                 </ul>
                 <div class="card-body">
                     <button type="button" routerLink="/gamelist/{{item.id}}" class="btn btn-outline-primary btn-sm btn-block">Details</button>
                 </div>
+                <p class="card-text" style="text-align: right"><span class="fa fa-ellipsis-h mr-3" style="font-size: 29px"></span></p>
             </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
             <div class="card bg-light">
-            <font align="center">   <img class="card-img-top" src="http://pngimg.com/uploads/adidas/adidas_PNG8.png" alt="Card image cap"></font> 
+            <font align="center">   <img class="card-img-top" src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c4f8.png" alt="Card image cap"></font> 
                 <div class="card-body">
-                    <h5 class="card-title">ADIDAS</h5><small class="text-muted">Anno di uscita: {{item.year}}</small>
+                    <h5 class="card-title">PUMA</h5><small class="text-muted"></small>
                     <p class="card-text" style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;"><small>{{item.description}}</small></p>
                 </div>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">{{item.genre}} - Rating: {{item.rating}}</li>
-                    <li class="list-group-item"><b>€ {{item.price}}</b></li>
                 </ul>
                 <div class="card-body">
                     <button type="button" routerLink="/gamelist/{{item.id}}" class="btn btn-outline-primary btn-sm btn-block">Details</button>
                 </div>
+                <p class="card-text" style="text-align: right"><span class="fa fa-ellipsis-h mr-3" style="font-size: 29px"></span></p>
             </div>
         </div>
     </div>
@@ -73,66 +87,68 @@
 
         <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
             <div class="card bg-light">
-            <font align="center">   <img class="card-img-top" src="http://pngimg.com/uploads/adidas/adidas_PNG8.png" alt="Card image cap"></font> 
+            <font align="center">   <img class="card-img-top" src="http://www.stickpng.com/assets/images/584292c4a6515b1e0ad75aca.png" alt="Card image cap"></font> 
                 <div class="card-body">
-                    <h5 class="card-title">ADIDAS</h5><small class="text-muted">Anno di uscita: {{item.year}}</small>
+                    <h5 class="card-title">JORDAN</h5><small class="text-muted"></small>
                     <p class="card-text" style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;"><small>{{item.description}}</small></p>
                 </div>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">{{item.genre}} - Rating: {{item.rating}}</li>
-                    <li class="list-group-item"><b>€ {{item.price}}</b></li>
+                    
                 </ul>
                 <div class="card-body">
                     <button type="button" routerLink="/gamelist/{{item.id}}" class="btn btn-outline-primary btn-sm btn-block">Details</button>
                 </div>
+                <p class="card-text" style="text-align: right"><span class="fa fa-ellipsis-h mr-3" style="font-size: 29px"></span></p>
             </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
             <div class="card bg-light">
-            <font align="center">   <img class="card-img-top" src="http://pngimg.com/uploads/adidas/adidas_PNG8.png" alt="Card image cap"></font> 
+            <font align="center">   <img class="card-img-top" src="https://banner2.kisspng.com/20180712/orr/kisspng-converse-chuck-taylor-all-stars-logo-brand-2018-vector-5b481f98ab4db0.0314353515314533367017.jpg" alt="Card image cap"></font> 
                 <div class="card-body">
-                    <h5 class="card-title">ADIDAS</h5><small class="text-muted">Anno di uscita: {{item.year}}</small>
+                    <h5 class="card-title">CONVERSE</h5><small class="text-muted"></small>
                     <p class="card-text" style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;"><small>{{item.description}}</small></p>
                 </div>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">{{item.genre}} - Rating: {{item.rating}}</li>
-                    <li class="list-group-item"><b>€ {{item.price}}</b></li>
                 </ul>
                 <div class="card-body">
                     <button type="button" routerLink="/gamelist/{{item.id}}" class="btn btn-outline-primary btn-sm btn-block">Details</button>
                 </div>
+                <p class="card-text" style="text-align: right"><span class="fa fa-ellipsis-h mr-3" style="font-size: 29px"></span></p>
             </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
             <div class="card bg-light">
-            <font align="center">   <img class="card-img-top" src="http://pngimg.com/uploads/adidas/adidas_PNG8.png" alt="Card image cap"></font> 
+            <font align="center">   <img class="card-img-top" src="https://cdn.freebiesupply.com/logos/large/2x/timberland-1-logo-png-transparent.png" alt="Card image cap"></font> 
                 <div class="card-body">
-                    <h5 class="card-title">ADIDAS</h5><small class="text-muted">Anno di uscita: {{item.year}}</small>
+                    <h5 class="card-title">TIMBERLAND</h5><small class="text-muted"></small>
                     <p class="card-text" style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;"><small>{{item.description}}</small></p>
                 </div>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">{{item.genre}} - Rating: {{item.rating}}</li>
-                    <li class="list-group-item"><b>€ {{item.price}}</b></li>
                 </ul>
                 <div class="card-body">
                     <button type="button" routerLink="/gamelist/{{item.id}}" class="btn btn-outline-primary btn-sm btn-block">Details</button>
                 </div>
+                <p class="card-text" style="text-align: right"><span class="fa fa-ellipsis-h mr-3" style="font-size: 29px"></span></p>
             </div>
         </div>
+
         <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
             <div class="card bg-light">
-            <font align="center">   <img class="card-img-top" src="http://pngimg.com/uploads/adidas/adidas_PNG8.png" alt="Card image cap"></font> 
+            <font align="center">   <img class="card-img-top" src="https://s3.amazonaws.com/peoplepng/wp-content/uploads/2018/05/27143708/Reebok-Logo-PNG-Photos.png" alt="Card image cap"></font> 
                 <div class="card-body">
-                    <h5 class="card-title">ADIDAS</h5><small class="text-muted">Anno di uscita: {{item.year}}</small>
-                    <p class="card-text" style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;"><small>{{item.description}}</small></p>
+                    <h5 class="card-title">REEBOK</h5><small class="text-muted"></small>
+                    <p class="card-text" style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;"><small></small></p>
                 </div>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">{{item.genre}} - Rating: {{item.rating}}</li>
-                    <li class="list-group-item"><b>€ {{item.price}}</b></li>
                 </ul>
                 <div class="card-body">
                     <button type="button" routerLink="/gamelist/{{item.id}}" class="btn btn-outline-primary btn-sm btn-block">Details</button>
                 </div>
+                <p class="card-text" style="text-align: right"><span class="fa fa-ellipsis-h mr-3" style="font-size: 29px"></span></p>
             </div>
         </div>
     </div>
