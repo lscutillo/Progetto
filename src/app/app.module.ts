@@ -18,6 +18,7 @@ import { AuthGuard } from './services/auth-gard.service';
 import { LoginService } from './services/login.service';
 import { MenuService } from './services/menu.service';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { SignUpComponent } from './components/sign-up/sign-up.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     FooterComponent,
     FeedbackProvaGridComponent,
     LoginComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,

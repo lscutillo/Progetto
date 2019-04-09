@@ -12,14 +12,11 @@ export class LoginComponent implements OnInit {
   constructor(private loginService: LoginService, private router: Router) { }
 
   ngOnInit() {
-    sessionStorage.clear();
-    //console.log(sessionStorage);
   }
 
   doLogin(user, pswd){
     this.loginService.login(user, pswd);
     this.router.navigateByUrl('/ShoesSelling/home');
-    console.log(sessionStorage);
   }
 }
 

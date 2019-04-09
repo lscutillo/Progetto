@@ -8,7 +8,7 @@
                     <div class="input-group-prepend">
                         <span class="input-group-text"> <i class="fa fa-user"></i> </span>
                     </div>
-                    <input class="form-control" placeholder="username" #username>
+                    <input class="form-control" placeholder="Username" #username>
                 </div>
             </div>
             <div class="form-group mb-5">
@@ -21,7 +21,7 @@
             </div>
             <div class="form-group">
                 <button type="button" class="btn btn-primary btn-block mb-3" (click)="doLogin(username.value, password.value)"> Login  </button>
-                <button type="button" class="btn btn-secondary btn-block"> Sei nuovo? Registrati  </button>
+                <button type="button" class="btn btn-secondary btn-block" routerLink="/signup"> Sei nuovo? Registrati  </button>
             </div>
         </form>
     </article>

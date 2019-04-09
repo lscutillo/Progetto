@@ -10,6 +10,7 @@ import { FeedbackProvaGridComponent } from './components/feedback-prova-grid/fee
 import { LoginComponent } from './components/login/login.component';
 import { AuthGuard } from './services/auth-gard.service';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { SignUpComponent } from './components/sign-up/sign-up.component';
 
 export const appRoutes: Routes = [
   {
@@ -24,6 +25,7 @@ export const appRoutes: Routes = [
   },
   //{ path: '', redirectTo: RoutingEnum.separator + RoutingEnum.base + RoutingEnum.separator + RoutingEnum.home, pathMatch: 'full' },
   { path: RoutingEnum.login, component: LoginComponent },
+  { path: RoutingEnum.signup, component: SignUpComponent },
   { path: '', redirectTo: '/' + RoutingEnum.login, pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent }
 ];

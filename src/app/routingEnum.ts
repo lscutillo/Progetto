@@ -6,5 +6,6 @@ export enum RoutingEnum {
     feedback = 'feedback',
     profilo = 'profilo',
     login = 'login',
+    signup = 'signup',
     separator = '/'
 }

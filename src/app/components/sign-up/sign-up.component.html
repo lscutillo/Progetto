@@ -1,0 +1,46 @@
+<div class="card mx-auto mt-5" style="width: 25rem;">
+    <article class="card-body">
+        <h4 class="card-title text-center mt-1">Registrazione</h4>
+        <hr>
+        <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Nome</label>
+                    <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome" ngModel required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Cognome</label>
+                    <input type="text" class="form-control" id="cognome" name="cognome" placeholder="Cognome" ngModel required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" id="username" name="username" placeholder="Username" ngModel required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="password">Password</label>
+                    <input type="text" class="form-control" id="pswd" name="pswd" placeholder="Password" ngModel required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email" ngModel>
+            </div>
+            <div class="form-group">
+                <label for="sesso">Sesso</label>
+                <select class="form-control" id="sesso" name="sesso" ngModel required>
+                  <option>Maschio</option>
+                  <option>Femmina</option>
+                </select>
+            </div>
+            <div class="form-group mb-5">
+                <label for="telefono">Telefono</label>
+                <input type="text" class="form-control" id="telefono" name="telefono" placeholder="Telefono" ngModel required>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block mb-3" [disabled]="f.invalid"> Iscriviti  </button>
+            </div>
+        </form>
+    </article>
+</div>
