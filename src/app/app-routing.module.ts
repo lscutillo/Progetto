@@ -19,7 +19,7 @@ export const appRoutes: Routes = [
       { path: RoutingEnum.product, component: ProductListComponent },
       { path: RoutingEnum.cards, component: CardsComponent },
       { path: RoutingEnum.feedback, component: FeedbackComponent },
-      { path: RoutingEnum.profilo, component: ProfiloComponent },
+      { path: RoutingEnum.profilo, component: FeedbackProvaGridComponent },
     ],
     canActivateChild: [AuthGuard]
   },
