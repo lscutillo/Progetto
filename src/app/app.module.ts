@@ -10,7 +10,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { CardsComponent } from './components/cards/cards.component';
 import { FeedbackComponent } from './components/feedback/feedback.component';
 import { ProfiloComponent } from './components/profilo/profilo.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {FooterComponent} from './components/footer/footer.component';
 import { LoginComponent } from './components/login/login.component';
 import { AuthGuard } from './services/auth-gard.service';
@@ -36,7 +36,8 @@ import { SignUpComponent } from './components/sign-up/sign-up.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [AuthGuard, LoginService, MenuService],
   bootstrap: [AppComponent]
