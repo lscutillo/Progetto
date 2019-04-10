@@ -29,20 +29,21 @@
                 <div class="card-body">
 
                     <h5 class="card-title">VANS</h5><small class="text-muted"></small>
+                    <div>
                     <div class="middle">
                             <div ><span class="fa fa-share-alt mr-3" style="font-size: 29px" ></span></div>
                     </div>
                           <div class="middleright">
                                 <div ><span class="fa fa-heart mr-3" style="font-size: 29px"></span></div>
                               </div>
-
+                            </div>
                     <p class="card-text" style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;"><small>{{item.description}}</small></p>
                 </div>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">{{item.genre}} - Rating: {{item.rating}}</li>
                 </ul>
                 <div class="card-body">
-                    <button type="button" routerLink="/gamelist/{{item.id}}" class="btn btn-outline-primary btn-sm btn-block">Details</button>
+                    <button type="button"  class="btn btn-outline-primary btn-sm btn-block">Details</button>
                 </div>
                 <p class="card-text" style="text-align: right"><span class="fa fa-ellipsis-h mr-3" style="font-size: 29px"></span></p>
             </div>
