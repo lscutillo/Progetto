@@ -14,11 +14,17 @@ export class LoginService{
                     sessionStorage.password = pswd;
                     this.isAuth=true;
                     //(Renny) ecco i dati nel sessionStorage per il component Profilo 
-                    sessionStorage.name = this.userlist[i].name;
-                    sessionStorage.surname = this.userlist[i].surname;
-                    sessionStorage.sex = this.userlist[i].sex;
-                    sessionStorage.email = this.userlist[i].email;
-                    sessionStorage.phone = this.userlist[i].phone;
+                    //sessionStorage.name = this.userlist[i].name;
+                    //sessionStorage.surname = this.userlist[i].surname;
+                    //sessionStorage.sex = this.userlist[i].sex;
+                    //sessionStorage.email = this.userlist[i].email;
+                    //sessionStorage.phone = this.userlist[i].phone;
+
+                    localStorage.name = this.userlist[i].name;
+                    localStorage.surname = this.userlist[i].surname;
+                    localStorage.sex = this.userlist[i].sex;
+                    localStorage.email = this.userlist[i].email;
+                    localStorage.phone = this.userlist[i].phone;
                 }
                 else{
                     alert("Utente non esistente")

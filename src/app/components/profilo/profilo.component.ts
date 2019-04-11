@@ -7,12 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfiloComponent implements OnInit {
 
-  name: string = sessionStorage.getItem('name');
-  surname: string = sessionStorage.getItem('surname');
-  sex: string = sessionStorage.getItem('sex');
-  phone: string = sessionStorage.getItem('phone');
-  email: string = sessionStorage.getItem('email');
-  username: string = sessionStorage.getItem('username');
+  name: string = localStorage.getItem('name');
+  surname: string = localStorage.getItem('surname');
+  sex: string = localStorage.getItem('sex');
+  email: string = localStorage.getItem('email');
+  phone: string = localStorage.getItem('phone');
+  username: string = localStorage.getItem('username');
   
   constructor() { }
 
