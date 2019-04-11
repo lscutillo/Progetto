@@ -12,7 +12,7 @@ import { FeedbackComponent } from './components/feedback/feedback.component';
 import { ProfiloComponent } from './components/profilo/profilo.component';
 import { FormsModule } from '@angular/forms';
 import {FooterComponent} from './components/footer/footer.component';
-import { FeedbackProvaGridComponent } from './components/feedback-prova-grid/feedback-prova-grid.component';
+
 
 @NgModule({
   declarations: [
@@ -23,8 +23,8 @@ import { FeedbackProvaGridComponent } from './components/feedback-prova-grid/fee
     CardsComponent,
     FeedbackComponent,
     ProfiloComponent,
-    FooterComponent,
-    FeedbackProvaGridComponent
+    FooterComponent
+    
   ],
   imports: [
     BrowserModule,
