@@ -23,5 +23,4 @@ export class MenuComponent implements OnInit {
     else
       this.display=false;
   }
-
 }
