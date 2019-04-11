@@ -7,6 +7,7 @@ import { ProductListComponent } from './components/product-list/product-list.com
 import { FeedbackComponent } from './components/feedback/feedback.component';
 import { ProfiloComponent } from './components/profilo/profilo.component';
 import { LoginComponent } from './components/login/login.component';
+import { SignUpComponent} from './components/signup/signup.component';
 
 import {AuthGuard} from './services/auth-gard.service'
 
@@ -23,8 +24,10 @@ export const appRoutes: Routes = [
     canActivateChild: [AuthGuard]
   },
   { path: '', redirectTo: RoutingEnum.separator + RoutingEnum.base + RoutingEnum.separator + RoutingEnum.home, pathMatch: 'full' },
-  {path: RoutingEnum.login, component: LoginComponent},
+  { path: RoutingEnum.login, component: LoginComponent },
+  { path: RoutingEnum.signup, component: SignUpComponent },
   { path: '', redirectTo: '/' + RoutingEnum.login, pathMatch: 'full' },
+  
 ];
 
 

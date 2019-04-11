@@ -14,6 +14,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {LoginComponent} from './components/login/login.component';
 import {AuthGuard}from './services/auth-gard.service';
 import {LoginService} from './services/login.service';
+import { SignUpComponent } from './components/signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {LoginService} from './services/login.service';
     FeedbackComponent,
     ProfiloComponent,
     FooterComponent,
-    LoginComponent
+    LoginComponent,
+    SignUpComponent
 
   ],
   imports: [
