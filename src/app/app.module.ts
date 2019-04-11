@@ -11,6 +11,9 @@ import {FooterComponent} from './components/footer/footer.component';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {LoginComponent} from './components/login/login.component';
+import {AuthGuard}from './services/auth-gard.service';
+import {LoginService} from './services/login.service';
 
 @NgModule({
   declarations: [
@@ -21,8 +24,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     CardsComponent,
     FeedbackComponent,
     ProfiloComponent,
-    FooterComponent
-    
+    FooterComponent,
+    LoginComponent
 
   ],
   imports: [
@@ -31,7 +34,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     FormsModule,
     NgbModule.forRoot()
   ],
-  providers: [],
+  providers: [AuthGuard,LoginService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -4,7 +4,7 @@ import { User } from '../objects/users';
 @Injectable()
 export class LoginService{
     isAuth = false;
-    userlist: Array<User> = [];
+    userlist: Array<User> = [];7
 
     login(user, pswd){
         if(this.userlist.length>0){
@@ -13,7 +13,7 @@ export class LoginService{
                     sessionStorage.username = user;
                     sessionStorage.password = pswd;
                     this.isAuth=true;
-
+                    
                     localStorage.name = this.userlist[i].name;
                     localStorage.surname = this.userlist[i].surname;
                     localStorage.sex = this.userlist[i].sex;
