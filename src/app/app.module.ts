@@ -6,7 +6,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { CardsComponent } from './components/cards/cards.component';
 import { FeedbackComponent } from './components/feedback/feedback.component';
 import { ProfiloComponent } from './components/profilo/profilo.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, FormBuilder } from '@angular/forms';
 import {FooterComponent} from './components/footer/footer.component';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -15,6 +15,9 @@ import {LoginComponent} from './components/login/login.component';
 import {AuthGuard}from './services/auth-gard.service';
 import {LoginService} from './services/login.service';
 import { SignUpComponent } from './components/signup/signup.component';
+import { MenuService } from './services/menu.service';
+import { ShoesService } from './services/shoes.service';
+
 
 @NgModule({
   declarations: [
@@ -27,8 +30,8 @@ import { SignUpComponent } from './components/signup/signup.component';
     ProfiloComponent,
     FooterComponent,
     LoginComponent,
-    SignUpComponent
-
+    SignUpComponent,
+   
   ],
   imports: [
     BrowserModule,
@@ -36,7 +39,7 @@ import { SignUpComponent } from './components/signup/signup.component';
     FormsModule,
     NgbModule.forRoot()
   ],
-  providers: [AuthGuard,LoginService],
+  providers: [AuthGuard,LoginService,MenuService,ShoesService,FormBuilder],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
