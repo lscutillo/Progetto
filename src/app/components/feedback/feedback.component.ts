@@ -1,5 +1,6 @@
 import { Component }              from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { AngularWaitBarrier } from 'blocking-proxy/built/lib/angular_wait_barrier';
 
 @Component({
   selector: 'app-feedback',
@@ -9,17 +10,24 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class FeedbackComponent {
   feedbackForm: FormGroup;
 
+  name: string = this.name;
+
   constructor(private fb: FormBuilder) { // <--- inject FormBuilder
     this.createForm();
   }
 
   createForm() {
     this.feedbackForm = this.fb.group({ 
-      name: ['', Validators.required ],
-      surname: ['', Validators.required ],
-      sex: ['', Validators.required ],
+      name: '',
+      surname: '',
+      sex: '',
       phone: '',
-      feedback: ['', Validators.required ],
+      feedback: '',
     });
   }
+
+  invia(){
+    console.log(this.feedbackForm.value);
+  }
+
 }
