@@ -3,6 +3,13 @@
     @include display-grid((auto auto auto));
 }
 
+.text {
+    @include grid-column(2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .form {
     @include grid-column(2);
     display: flex;

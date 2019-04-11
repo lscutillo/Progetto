@@ -1,53 +1,57 @@
-<form [formGroup]="feedbackForm" class="form">
-    <div class="feedback">
-        <div class="title">
+<div class="box">
+
+    <form [formGroup]="feedbackForm" class="form">
+        <div class="feedback">
+            <div class="title">
+                <div class="">
+                    <h3><i class="title"></i> Contattaci</h3>
+                    <p class="title">le vostre segnalazioni ci aiuteranno a migliorare</p>
+                </div>
+            </div>
+
             <div class="">
-                <h3><i class=" "></i> Contattaci</h3>
-                <p class=" ">le vostre segnalazioni ci aiuteranno a migliorare</p>
-            </div>
-        </div>
 
-        <div class="">
+                <div class="input-container">
+                    <i class="fas fa-user item1"></i>
+                    <input type="text " formControlName="name" class="item2" name="name" placeholder=" Nome" required>
+                </div>
+                <br>
+                <div class="input-container">
+                    <i class="fas fa-user item1"></i>
+                    <input type="text" formControlName="surname" class="item2" name="surname" placeholder=" Cognome " required>
+                </div>
+                <br>
+                <div class="input-container">
 
-            <div class="input-container">
-                <i class="fas fa-user item1"></i>
-                <input type="text " formControlName="name" class="item2" name="name" placeholder=" Nome" required>
-            </div>
-            <br>
-            <div class="input-container">
-                <i class="fas fa-user item1"></i>
-                <input type="text" formControlName="surname" class="item2" name="surname" placeholder=" Cognome " required>
-            </div>
-            <br>
-            <div class="input-container">
-
-                <i class="fas fa-venus-mars item1"></i>
-                <select formControlName="sex" class="item2" name="Genere">
+                    <i class="fas fa-venus-mars item1"></i>
+                    <select formControlName="sex" class="item2" name="Genere">
                         <option value="" disabled selected>Sesso</option>
                         <option value="Uomo">Uomo</option>
                         <option value="Donna">Donna</option>
                     </select>
+                </div>
+                <br>
+                <div class="input-container">
+                    <i class=" fas fa-phone item1 "></i>
+                    <input type="text " formControlName="phone" class="item2 " name="telefono " placeholder=" Telefono " required>
+                </div>
             </div>
             <br>
-            <div class="input-container">
-                <i class=" fas fa-phone item1 "></i>
-                <input type="text " formControlName="phone" class="item2 " name="telefono " placeholder=" Telefono " required>
+            <div class="end-container ">
+                <textarea class="textarea " formControlName="feedback" placeholder=" Inviaci la tua segnalazione... " required></textarea>
             </div>
+            <br>
+            <br>
+            <div class="end-container">
+                <a href="emailto:prova@lynxspa.com">
+                    <button (click)="sendEmail()" value="Invia " class="invia">INVIA</button>
+                </a>
+            </div>
+
+
+
         </div>
-        <br>
-        <div class="end-container ">
-            <textarea class="textarea " formControlName="feedback" placeholder=" Inviaci la tua segnalazione... " required></textarea>
-        </div>
-        <br>
-        <br>
-        <div class="end-container">
-            <a href="emailto:prova@lynxspa.com">
-                <button (click)="sendEmail()" value="Invia " class="invia">INVIA</button>
-            </a>
-        </div>
 
+    </form>
 
-
-    </div>
-
-</form>
+</div>
