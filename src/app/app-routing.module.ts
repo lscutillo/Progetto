@@ -19,6 +19,7 @@ export const appRoutes: Routes = [
       { path: RoutingEnum.cards, component: CardsComponent },
       { path: RoutingEnum.feedback, component: FeedbackComponent },
       { path: RoutingEnum.profilo, component: ProfiloComponent },
+      { path: RoutingEnum.login, component :LoginComponent}
       
     ],
     canActivateChild: [AuthGuard]

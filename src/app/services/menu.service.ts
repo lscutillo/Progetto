@@ -13,8 +13,7 @@ export class MenuService {
     new MenuItem('I Nostri Prodotti', RoutingEnum.separator + RoutingEnum.base + RoutingEnum.separator + RoutingEnum.product),
     new MenuItem('Le Nostre Marche', RoutingEnum.separator + RoutingEnum.base + RoutingEnum.separator + RoutingEnum.cards),
     new MenuItem('Feedback', RoutingEnum.separator + RoutingEnum.base + RoutingEnum.separator + RoutingEnum.feedback),
-    new MenuItem('Profilo', RoutingEnum.separator + RoutingEnum.base + RoutingEnum.separator + RoutingEnum.profilo),
-    new MenuItem('Login', RoutingEnum.separator + RoutingEnum.base + RoutingEnum.separator + RoutingEnum.login),
+    new MenuItem('Profilo', RoutingEnum.separator + RoutingEnum.base + RoutingEnum.separator + RoutingEnum.profilo),    
   ]
 
   constructor() { }
