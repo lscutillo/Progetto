@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuItem } from 'src/app/objects/menuItem';
 import { MenuService } from 'src/app/services/menu.service';
+import { LoginService } from 'src/app/services/login.service';
 
 @Component({
   selector: 'app-menu',
@@ -8,7 +9,7 @@ import { MenuService } from 'src/app/services/menu.service';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
-  constructor(private menuService: MenuService) { }
+  constructor(private menuService: MenuService,private loginService : LoginService) { }
   menu: MenuItem[];
   display = false;
 
@@ -23,4 +24,9 @@ export class MenuComponent implements OnInit {
     else
       this.display=false;
   }
+
+  doLogout(){
+    this.loginService.logout();
+  }
+
 }
