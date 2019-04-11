@@ -12,6 +12,7 @@ describe('ProfiloComponent', () => {
     })
     .compileComponents();
   }));
+  
 
   beforeEach(() => {
     fixture = TestBed.createComponent(ProfiloComponent);

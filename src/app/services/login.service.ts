@@ -13,12 +13,6 @@ export class LoginService{
                     sessionStorage.username = user;
                     sessionStorage.password = pswd;
                     this.isAuth=true;
-                    //(Renny) ecco i dati nel sessionStorage per il component Profilo 
-                    //sessionStorage.name = this.userlist[i].name;
-                    //sessionStorage.surname = this.userlist[i].surname;
-                    //sessionStorage.sex = this.userlist[i].sex;
-                    //sessionStorage.email = this.userlist[i].email;
-                    //sessionStorage.phone = this.userlist[i].phone;
 
                     localStorage.name = this.userlist[i].name;
                     localStorage.surname = this.userlist[i].surname;

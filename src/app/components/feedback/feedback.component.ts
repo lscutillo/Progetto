@@ -16,6 +16,7 @@ export class FeedbackComponent {
     this.createForm();
   }
 
+  
   createForm() {
     this.feedbackForm = this.fb.group({ 
       name: '',

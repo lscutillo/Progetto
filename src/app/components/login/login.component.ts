@@ -13,6 +13,7 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
   }
+  
 
   doLogin(user, pswd){
     this.loginService.login(user, pswd);

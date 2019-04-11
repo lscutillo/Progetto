@@ -16,6 +16,7 @@ export class ProfiloComponent implements OnInit {
   
   constructor() { }
 
+  
   ngOnInit() {
   }
 
