@@ -26,7 +26,7 @@ export class FeedbackComponent {
     });
   }
 
-  invia(){
+  sendEmail(){
     console.log(this.feedbackForm.value);
   }
 
