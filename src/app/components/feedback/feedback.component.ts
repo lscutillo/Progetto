@@ -6,10 +6,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./feedback.component.scss']
 })
 export class FeedbackComponent implements OnInit {
-
-  constructor() { }
-
   ngOnInit() {
+  }
+
+  constructor(private fb: FormBuilder) { // <--- inject FormBuilder
+    this.createForm();
+  }
+
+  createForm() {
+    this.feedbackForm = this.fb.group({
+      name: '',
+      surname: '',
+      sex: '',
+      phone: '',
+      feedback: '',
+    });
+  }
+
+  sendEmail() {
+    console.log(this.feedbackForm.value);
   }
 
 }

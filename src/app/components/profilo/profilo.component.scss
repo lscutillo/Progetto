@@ -1,0 +1,48 @@
+@import '../../../assets/mixin/mixin.scss';
+.profile {
+    color: white;
+    @include display-grid(auto auto auto);
+}
+
+.container {
+    @include grid-column(2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+td {
+    width: 100px
+}
+
+th,
+td {
+    border-right: solid 1px white;
+}
+
+.lbl1 {}
+
+.txt1 {}
+
+table {
+    border-collapse: collapse;
+}
+
+table tr:first-child th {
+    border-top: 0;
+}
+
+table tr:last-child td {
+    border-bottom: 0;
+}
+
+table tr td:first-child,
+table tr th:first-child {
+    border-left: 0;
+}
+
+table tr td:last-child,
+table tr th:last-child {
+    border-right: 0;
+}

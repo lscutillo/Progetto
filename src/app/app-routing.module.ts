@@ -23,6 +23,7 @@ export const appRoutes: Routes = [
   //{ path: '', redirectTo: '/' + RoutingEnum.login, pathMatch: 'full' },
 ];
 
+
 @NgModule({
   imports: [RouterModule.forRoot(appRoutes)],
   exports: [RouterModule]
