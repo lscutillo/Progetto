@@ -8,6 +8,9 @@ import { FeedbackComponent } from './components/feedback/feedback.component';
 import { ProfiloComponent } from './components/profilo/profilo.component';
 import { FormsModule } from '@angular/forms';
 import {FooterComponent} from './components/footer/footer.component';
+import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
